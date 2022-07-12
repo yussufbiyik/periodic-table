@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/css/uikit.min.css"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/js/uikit-icons.min.js"></script>
+
+    <title>Periyodik Tablo</title>
+</head>
+<body>
+    <div class="uk-container uk-container-expand uk-margin-medium-top uk-margin-medium-bottom">
+        <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+                <div class="uk-width-1-3@m uk-width-1-5@l">
+                    <div class="uk-card uk-card-default uk-card-body card folded" id="element-card">
+                        <div class="settings">
+                            <select name="languageSelector" id="languageSelector">
+                                <option value="tr">Türkçe</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+                        <div class="element uk-padding">
+                            <span class="symbol" id="element-card-symbol"></span>
+                        </div>
+                        <hr>
+                        <div class="elementinfo">
+                            <ul class="uk-list uk-overflow-auto element-card-info">
+                                <li>
+                                    <span id="element-card-name-value">Yazılışı: </span><span id="element-card-name"></span>
+                                </li>
+                                <li>
+                                    <span id="element-card-number-value">Atom Numarası: </span><span id="element-card-number"></span>
+                                </li>
+                                <li>
+                                    <span id="element-card-weight-value">Atom Kütlesi: </span><span id="element-card-weight"></span>
+                                </li>
+                                <li>
+                                    <span id="element-card-proton-value">Proton Sayısı: </span><span id="element-card-proton"></span>
+                                </li>
+                                <li>
+                                    <span id="element-card-neutron-value">Nötron Sayısı: </span><span id="element-card-neutron"></span>
+                                </li>
+                                <li>
+                                    <span id="element-card-electron-value">Elektron Sayısı: </span><span id="element-card-electron"></span>
+                                </li>
+                                <li>
+                                    <span id="element-card-type-value">Türü: </span><span id="element-card-type"></span>
+                                </li>
+                                <li>
+                                    <span id="element-card-location-value">Periyodik Tablodaki Konumu: </span><span id="element-card-location"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-padding-remove card">
+                        <table class="uk-table uk-table-middle uk-table-small uk-table-divider">
+                            <thead>
+                                <tr class="uk-text-center">
+                                    <th class="uk-text-center periodmark noleftborder">1</th>
+                                    <th class="uk-text-center periodmark">2</th>
+                                    <th class="uk-text-center periodmark">3</th>
+                                    <th class="uk-text-center periodmark">4</th>
+                                    <th class="uk-text-center periodmark">5</th>
+                                    <th class="uk-text-center periodmark">6</th>
+                                    <th class="uk-text-center periodmark">7</th>
+                                    <th class="uk-text-center periodmark">8</th>
+                                    <th class="uk-text-center periodmark">9</th>
+                                    <th class="uk-text-center periodmark">10</th>
+                                    <th class="uk-text-center periodmark">11</th>
+                                    <th class="uk-text-center periodmark">12</th>
+                                    <th class="uk-text-center periodmark">13</th>
+                                    <th class="uk-text-center periodmark">14</th>
+                                    <th class="uk-text-center periodmark">15</th>
+                                    <th class="uk-text-center periodmark">16</th>
+                                    <th class="uk-text-center periodmark">17</th>
+                                    <th class="uk-text-center periodmark norightborder">18</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="uk-card uk-card-default smallelement uk-card-hover not-interactive"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="uk-card uk-card-default smallelement uk-card-hover not-interactive"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element"></div></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="#element-card" onclick="unfoldElementCard()"><div class="uk-card uk-card-default smallelement uk-card-hover pt-element-extra"></div></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="invisible"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

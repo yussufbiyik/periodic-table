@@ -1,0 +1,224 @@
+html{
+    scroll-behavior: smooth;
+    background-color: var(--background-color) !important;
+}
+
+:root{
+    /* Main Colors */
+    --focus-border-color:#2E86AB;
+    --background-color:#28262C;
+    --foreground-color:#998FC7;
+    --border-small-radius:.8pc;
+    --focus-border-width:5px;
+    --border-radius:1pc;
+
+    /* Trackbar Colors */
+    --handle-active-bg-color:#D4C2FC;
+    --handle-hover-bg-color:#F9F5FF;
+}
+
+*:focus{
+    outline: none;
+    transition-duration: .1s;
+    border: solid var(--focus-border-width) var(--focus-border-color) !important;
+}
+
+*:focus > *{
+    outline: none;
+    transition-duration: .1s;
+    border: solid var(--focus-border-width) var(--focus-border-color) !important;
+}
+
+.card{
+    border-radius: var(--border-radius);
+    overflow-y: hidden !important;
+    background-color: var(--foreground-color) !important;
+}
+
+.element{
+    border-radius: var(--border-radius) !important;
+    background-color: #fff !important;
+}
+
+.symbol{
+    color:Black;
+    font-size: 100px !important;
+    font-weight: bold !important;
+}
+
+.elementinfo{
+    color: White !important;
+}
+
+/* width */
+.element-card-info::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+
+/* Track */
+.element-card-info::-webkit-scrollbar-track {
+    background: var(--foreground-color);
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-radius: var(--border-radius);
+}
+
+/* Handle */
+.element-card-info::-webkit-scrollbar-thumb {
+    z-index: -1;
+    background: white;
+    border-radius: var(--border-radius) !important;
+}
+
+.element-card-info::-webkit-scrollbar-thumb:hover {
+    background: var(--handle-hover-bg-color);
+}
+
+/* Handle on hover */
+.element-card-info::-webkit-scrollbar-thumb:active {
+    background: #D4C2FC;
+}
+
+.smallelement{
+    opacity:0.8 !important;
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: var(--border-small-radius) !important;
+    background-color: #fff !important;
+    transition: all 0.15s ease-in-out !important; 
+}
+
+.smallelement:hover{
+    opacity:1 !important;
+}
+
+.smallelement:active{
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+}
+
+.invisible{
+    visibility: hidden !important;
+}
+
+.whitetext{
+    color: White !important;
+}
+
+table th, table tr{
+    color: White !important;
+}
+
+/* width */
+.card::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+
+/* Track */
+.card::-webkit-scrollbar-track {
+    background: var(--foreground-color);
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-radius: var(--border-radius);
+}
+
+/* Handle */
+.card::-webkit-scrollbar-thumb {
+    z-index: -1;
+    background: white;
+    border-radius: var(--border-radius) !important;
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+    background: var(--handle-hover-bg-color);
+}
+
+/* Handle on hover */
+.card::-webkit-scrollbar-thumb:active {
+    background: var(--handle-active-bg-color);
+}
+
+.folded{
+    max-height: 10px !important;
+    transition: max-height .3s ease-in;
+}
+
+.un.folded{
+    max-height: 1000px !important;
+    transition: max-height .3s ease-in;
+}
+
+.periodmark{
+    font-size: 16pt !important;
+    font-weight: bold !important;
+    border:solid 0px !important;
+    border-left-width: 4px !important;
+    border-right-width: 4px !important;
+    border-bottom-width: 4px !important;
+}
+
+.noleftborder{
+    border-left: none !important;
+}
+
+.norightborder{
+    border-right: none !important;
+}
+
+.not-interactive{
+    background-color: #828cba !important;
+}
+
+.pt-element{
+    cursor: pointer;
+}
+
+.pt-element span, .pt-element-extra span{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    color:Black;
+    cursor: pointer;
+    font-size: 20pt;
+    font-weight: bold;
+
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pt-element span a, .pt-element-extra span a{
+    color: black;
+    text-decoration: none;
+}
+
+#heat-slider{
+    width: 70%;
+}
+
+#element-card:hover{
+    animation:shake;animation-iteration-count: infinite;
+}
+
+.settings{
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.settings select{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: var(--border-small-radius)var(--border-small-radius) 0 0;
+}
+
+.settings option{
+    width: 100%;
+    padding-left: 10px;
+}
